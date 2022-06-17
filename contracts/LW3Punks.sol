@@ -11,7 +11,7 @@ contract LW3Punks is ERC721Enumerable, Ownable {
     token will be the concatenation of the 'baseURI' and the 'tokenId'. */
     string _baseTokenURI;
     //_price is the price of each LW3Punks NFT
-    uint256 _price = 0.01 ether;
+    uint256 public _price = 0.01 ether;
     //_apused is used to pause the contract in case of an emergency
     bool public _paused;
     //max number of LW3Punks to be creadted
